@@ -10,6 +10,10 @@ the order in which the args and flags appear doesnt matter as long as it doesnt 
 ## methods:
 >void process(string s) // processes the string and stores the data inside the object
 
+>int argc() // returns the number of captured args
+
+>int flagc() // returns the number of captured flags
+
 >bool has_arg(string s) // returns true if the processed command includes the specified argument
 
 >bool has_flag(string s) // returns true if the processed command includes the specified flag
@@ -27,7 +31,7 @@ the order in which the args and flags appear doesnt matter as long as it doesnt 
 >vector<FLAG_ELEM> flags // a vector of all the captured flags. The FLAG_ELEM class holds the flag and content fields.
 
 ## example
-```
+```cpp
 #include <iostream>
 #include "command.h"
 
@@ -56,10 +60,10 @@ output:
 >  
 > arg1
 >  
-> -f      fname
+> -f&emsp;&emsp;&emsp;&emsp;fname
 >  
 > -t
 >  
-> -c      12
+> -c&emsp;&emsp;&emsp;&emsp;12
 >  
-> -l      C:\Users\A Name With Spaces\Desktop``
+> -l&emsp;&emsp;&emsp;&emsp;C:\Users\A Name With Spaces\Desktop``
