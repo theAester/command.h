@@ -67,3 +67,10 @@ output:
 > -c&emsp;&emsp;&emsp;&emsp;12
 >  
 > -l&emsp;&emsp;&emsp;&emsp;C:\Users\A Name With Spaces\Desktop``
+
+  
+## upcoming changes (TODO):
+
+- [ ] 1. stream >> and << override for better accessibility
+- [ ] 2. templates and capturing option (kind of like regex but more specialized)
+- [ ] 3. capture options
